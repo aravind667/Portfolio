@@ -1547,48 +1547,50 @@ html {
   }
 }
 
-.section-contact {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 40px 10px;
-  background: #f7f9fb;
+body {
+  /* Optional: base background for light/dark mode */
+  --background-color: #fff;
+  --card-bg: #fff;
+  --card-text: #222;
 }
 
+body.dark-mode {
+  --background-color: #18181b;
+  --card-bg: #191a21;
+  --card-text: #f8fafc;
+}
+
+.section-contact {
+  background: var(--background-color);
+}
+
+/* Style the card based on current mode */
 .form-card {
-  max-width: 660px;
-  width: 100%;
-  background: #fff;
+  background: var(--card-bg);
+  color: var(--card-text);
+  /* ...existing styles... */
   border-radius: 18px;
   box-shadow: 0 4px 32px rgba(52,72,121,0.11), 0 1.5px 15px rgba(52,90,121,0.06);
   padding: 36px 28px 28px 28px;
   margin: 0 auto;
 }
 
+/* Title remains readable in both modes */
 .form-title {
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #24345d;
-  margin-bottom: 6px;
-  text-align: center;
-  font-family: 'Montserrat', Arial, sans-serif;
-  letter-spacing: .01em;
+  color: var(--card-text);
 }
 
+/* Description text muted based on mode */
 .form-desc {
-  color: #718197;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.08rem;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #789; /* add custom light/dark as desired */
 }
 
-.iframe-wrapper {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 1.5px 16px rgba(39,40,90,0.07);
+/* Optional: Darken .iframe-wrapper border in dark mode */
+body.dark-mode .iframe-wrapper {
+  box-shadow: 0 1.5px 20px rgba(39,40,90,0.21);
 }
 
+/* Device responsiveness as before */
 @media (max-width: 700px) {
   .form-card {
     padding: 14px 2vw 18px 2vw;
