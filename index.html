@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind Kottakota - Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- jsPDF for dynamic resume download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <a href="#home">AK</a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" aria-label="Home section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name">KOTTAKOTA ARAVIND</h1>
+                    <h2 class="hero-title">Software Developer</h2>
+                    <p class="hero-description">
+                        Software Developer with 2+ years of experience specializing in Java, Python, Django for web application development. Expertise in optimizing backend performance, automating workflows with AI/ML, and integrating REST APIs.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn--primary" aria-label="Scroll to contact form">Get In Touch</a>
+                        <a href="#" id="downloadResume" class="btn btn--outline" aria-label="Download resume">
+                            <i class="fas fa-file-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://linkedin.com/in/aravindkottakota" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/aravind667" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:aravindkottakota1@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <div class="avatar-placeholder" aria-label="Avatar placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" aria-label="About section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know more about my background and expertise</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a dedicated Software Developer with 2+ years of experience at L&T Technology Services, where I specialize in Java, Python, and Django for web application development. My expertise lies in optimizing backend performance, automating workflows with AI/ML, and integrating REST APIs.
+                    </p>
+                    <p>
+                        Throughout my career, I have contributed to full-stack development projects, achieving a 25% increase in system efficiency and mentoring junior developers. I'm passionate about creating scalable solutions and continuously learning new technologies.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-number">2+</div>
+                            <div class="highlight-text">Years Experience</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number">25%</div>
+                            <div class="highlight-text">System Efficiency Increase</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number">35%</div>
+                            <div class="highlight-text">Scalability Improvement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section" aria-label="Experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <p>My journey in software development</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>L&T Technology Services</h4>
+                        <ul>
+                            <li>Directed the transition of a Django-based platform to Jenkins, improving scalability by 35% and cutting operational costs</li>
+                            <li>Automated compliance tasks using Java, resulting in significant improvements in reporting efficiency</li>
+                            <li>Collaborated on full-stack development using Python/Django and React.js, enhancing system performance and integration</li>
+                            <li>Integrated multiple systems with REST APIs for seamless data exchange, reducing synchronization time by 40%</li>
+                            <li>Reduced query execution times by 25% and improved PostgreSQL scalability by 50%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" aria-label="Projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work and achievements</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project cards (unchanged) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Jenkins Migration & Full-Stack Development</h3>
+                        <span class="project-type">Django-based Web Application</span>
+                    </div>
+                    <div class="project-duration">Jan 2022 – Present</div>
+                    <div class="project-company">L&T Technology Services (Sony)</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Led the migration of a Django platform to Jenkins, resulting in a 35% improvement in scalability and reduced cloud infrastructure costs</li>
+                            <li>Automated regulatory compliance with Java modules, streamlining workflows across 30+ systems</li>
+                            <li>Contributed to both frontend (React.js, JavaScript) and backend (Python/Django) development</li>
+                            <li>Integrated REST APIs with LDAP, JIRA, and Gerrit to optimize data exchange</li>
+                            <li>Optimized PostgreSQL database queries, reducing query time by 25%</li>
+                        </ul>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>AI-Driven Predictive Analytics</h3>
+                        <span class="project-type">Data Visualization Project</span>
+                    </div>
+                    <div class="project-duration">Aug 2021 – Jan 2022</div>
+                    <div class="project-company">Highradius (Internship)</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Developed interactive dashboards using Highcharts and JavaScript for data analysis of large datasets</li>
+                            <li>Implemented AI-driven models for predictive analytics, improving decision-making by 30%</li>
+                            <li>Enhanced product recommendation systems using machine learning, boosting engagement by 18%</li>
+                        </ul>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Highcharts</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">AI/ML</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Interactive Tourism Guide Web Application</h3>
+                        <span class="project-type">Web Application</span>
+                    </div>
+                    <div class="project-duration">Feb 2019 – May 2019</div>
+                    <div class="project-company">Self-Developed</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Designed and deployed a responsive tourism guide application using HTML5 and Bootstrap</li>
+                            <li>Implemented interactive features with JavaScript and jQuery, improving user engagement</li>
+                            <li>Utilized CSS3 to enhance the visual design and optimize the layout for various screen sizes</li>
+                            <li>Deployed using Netlify with version control via Git, ensuring seamless updates</li>
+                        </ul>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">jQuery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section" aria-label="Education section">
+        <!-- Content unchanged -->
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <p>My academic background and certifications</p>
+            </div>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Bachelor of Technology in Computer Science, Cybersecurity</h3>
+                        <h4>Lovely Professional University</h4>
+                        <p class="education-location">Phagwara, India</p>
+                        <p class="education-duration">Jun 2018 – May 2022</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Front-End Web UI Frameworks and Tools: Bootstrap 4</h3>
+                        <h4>Coursera by The Hong Kong University of Science and Technology</h4>
+                        <p class="education-duration">Oct 2021 – Dec 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="achievements-section">
+                <h3>Achievements & Awards</h3>
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <i class="fas fa-award"></i>
+                        <p>SPOT Award and Star of the Month for automating scripts, which reduced time by 40% for manual tasks</p>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-code"></i>
+                        <p>Developed over 20+ automation scripts, reducing software delivery time by 40% and streamlining workflows</p>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Ensured full regulatory compliance by designing and implementing 10+ modules, passing all audits successfully</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" aria-label="Skills section">
+        <!-- Content unchanged -->
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Skills categories unchanged -->
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
+                        <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+                        <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                        <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
+                        <div class="skill-item"><i class="fab fa-css3"></i><span>CSS</span></div>
+                        <div class="skill-item"><i class="fab fa-react"></i><span>React.js</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks & Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-database"></i><span>Django</span></div>
+                        <div class="skill-item"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                        <div class="skill-item"><i class="fas fa-code"></i><span>jQuery</span></div>
+                        <div class="skill-item"><i class="fas fa-code"></i><span>Ajax</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-code-branch"></i><span>Jenkins</span></div>
+                        <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                        <div class="skill-item"><i class="fas fa-code-branch"></i><span>Gerrit</span></div>
+                        <div class="skill-item"><i class="fas fa-tasks"></i><span>JIRA</span></div>
+                        <div class="skill-item"><i class="fas fa-chart-line"></i><span>NumPy</span></div>
+                        <div class="skill-item"><i class="fas fa-chart-bar"></i><span>Pandas</span></div>
+                        <div class="skill-item"><i class="fas fa-code"></i><span>Visual Studio Code</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-comments"></i><span>Communication</span></div>
+                        <div class="skill-item"><i class="fas fa-users"></i><span>Team Collaboration</span></div>
+                        <div class="skill-item"><i class="fas fa-crown"></i><span>Leadership</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" aria-label="Contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss opportunities and collaborate on exciting projects</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>aravindkottakota1@gmail.com</p></div></div>
+                    <div class="contact-item"><i class="fas fa-phone"></i><div><h4>Phone</h4><p>+91-8179245718</p></div></div>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>Location</h4><p>India</p></div></div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xdoqpznb" method="POST">
+                        <div class="form-group"><label for="name" class="form-label">Name</label><input type="text" id="name" name="name" class="form-control" required></div>
+                        <div class="form-group"><label for="email" class="form-label">Email</label><input type="email" id="email" name="email" class="form-control" required></div>
+                        <div class="form-group"><label for="subject" class="form-label">Subject</label><input type="text" id="subject" name="subject" class="form-control" required></div>
+                        <div class="form-group"><label for="message" class="form-label">Message</label><textarea id="message" name="message" class="form-control" rows="5" required></textarea></div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                    <div class="form-status" id="formStatus" role="alert"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Aravind Kottakota</h3>
+                    <p>Software Developer passionate about creating innovative solutions</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/aravindkottakota" target="_blank" rel="noopener" class="footer-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/aravind667" target="_blank" rel="noopener" class="footer-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:aravindkottakota1@gmail.com" class="footer-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aravind Kottakota. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
