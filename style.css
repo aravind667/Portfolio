@@ -1546,3 +1546,54 @@ html {
     transform: rotate(360deg);
   }
 }
+
+.section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 10px;
+  background: #f7f9fb;
+}
+
+.form-card {
+  max-width: 660px;
+  width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(52,72,121,0.11), 0 1.5px 15px rgba(52,90,121,0.06);
+  padding: 36px 28px 28px 28px;
+  margin: 0 auto;
+}
+
+.form-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #24345d;
+  margin-bottom: 6px;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  letter-spacing: .01em;
+}
+
+.form-desc {
+  color: #718197;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.08rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.iframe-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1.5px 16px rgba(39,40,90,0.07);
+}
+
+@media (max-width: 700px) {
+  .form-card {
+    padding: 14px 2vw 18px 2vw;
+  }
+  .iframe-wrapper iframe {
+    height: 560px;
+  }
+}
